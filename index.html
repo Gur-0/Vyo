@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="Imágenes HTML/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/estilosA.css">
+    <title>Vy</title>
+</head>
+<body>
+    <header>
+        <img src="Imágenes HTML/Icon.png" alt=""
+            height="75" width="75">
+        <nav>
+            <ul class="menu">
+                <li class="itemMenu">Inicio</li>
+                <li class="itemMenu">Contacto</li>
+                <li class="itemMenu">Ofertas</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="portada">
+            <h1>Vy, tu sitio de vinos preferidos.</h1>
+            <p>Bienvenidos a "Vy", elija sus vinos favoritos y agreguelo al carrito de compras.</p>
+        </section>
+
+        <section class="contenedorCards">
+
+            <div class="producto" data-price="10">
+                <h3>Vino Tinto--Malbec</h3>
+                <img src="Imágenes HTML/Vino1.jpg" alt="plano">
+                <p><span>$</span>7000</p>
+                <button class="agregar">Agregar</button>
+            </div>
+
+            <div class="producto" data-price="20">
+                <h3>Producto 2</h3>
+                <img src="./img/imgPlano.png" alt="plano">
+                <p><span>$</span>500</p>
+                <button class="agregar">Agregar</button>
+            </div>
+
+            <div class="producto" data-price="20">
+                <h3>Producto 3</h3>
+                <img src="./img/imgPlano.png" alt="plano">
+                <p><span>$</span>400</p>
+                <button class="agregar">Agregar</button>
+            </div>
+
+            <div class="producto" data-price="20">
+                <h3>Producto 4</h3>
+                <img src="./img/imgPlano.png" alt="plano">
+                <p><span>$</span>300</p>
+                <button class="agregar">Agregar</button>
+            </div>
+
+        </section>
+
+        <section class="contenedorCarrito">
+            <div class="cart">
+                <h2>Carrito</h2>
+                <ul id="lista"></ul>
+                <div>
+                    <button id="vaciar">Vaciar Carrito</button>
+                    <!--Puede que en vez de class sea id-->
+                </div>
+            </div>
+
+        </section>
+        <div class="total">
+            <p>Total: <span class="totalPrecio"> $0</span>Ars</p>
+            <!--tambien en vez de class puede ser id-->
+        </div>
+
+    </main>
+    <footer>
+        <img src="https://dummyimage.com/100x100/c5c6c7/fff" alt="">
+        <div>
+            <a href=""><img src="https://dummyimage.com/50x50/c5c6c7/fff" alt=""></a>
+            <a href=""><img src="https://dummyimage.com/50x50/c5c6c7/fff" alt=""></a>
+            <a href=""><img src="https://dummyimage.com/50x50/c5c6c7/fff" alt=""></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
