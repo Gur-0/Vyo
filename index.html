@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="Imágenes HTML/favicon-32x32.png">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Vyo</title>
+</head>
+<body>
+    <header>
+        <img src="Imágenes HTML/Icon.png" alt=""
+            height="75" width="75">
+        <nav>
+            <ul class="menu">
+                <a href="index.html"
+                <li class="itemMenu">Inicio</li>
+                </a>
+                <li id="irFooter" class="itemMenu"><u>Contacto</u></li>
+                <li class="itemMenu" id="IrC"><u>Comentarios</u></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="portada">
+            <h1>Vyo, tu sitio de vinos preferidos.</h1>
+            <p>Conozca y compre sus vinos preferidos.</p>
+        </section>
+        <br>
+        <section class="informacion">
+            <div class="info">
+            <h1><i>¿Cómo se produce el vino?</i></h1>
+            <p>El mejor vino en la Argentina es producida en Mendoza, una provincia calurosa y seca,
+                perfecta para la plantación de uvas y la fermentación del vino.
+                Se utilizan máquinas despalilladoras y estrujadoras para poder quitar el tallo y romper
+                cuidadosamente la uva, no se quitan las semillas ni la piel a causa de ser importantes para
+                la fermentación de la uva. La uva pasada por estos procesos se llama "mosto", la cual es
+                fermentada en un tanque de acero inoxidable o barricas de roble, dependiendo del vino que se quiera elaborar.
+            </p>
+            </div>
+        </section>
+
+        <section class="contenedorCards">
+
+            <div class="producto" data-price="6000">
+                <h4>Vino tinto</h4>
+                <img src="Imágenes HTML/Vino tinto.png" alt="plano">
+                <p><span>$</span>8000</p>
+                <button class="agregar">Agregar</button>
+                <button id="Rojo" class="infoVino">Información</button>
+            </div>
+
+            <div class="producto" data-price="5000">
+                <h4>Vino blanco</h4>
+                <img src="Imágenes HTML/Vino blanco.png" alt="plano">
+                <p><span>$</span>5000</p>
+                <button class="agregar">Agregar</button>
+                <button id="blanco" class="infoVino" id="blanco">Información</button>
+            </div>
+
+            <div class="producto" data-price="20000">
+                <h4>Vino rosado</h4>
+                <img src="Imágenes HTML/Vino rosado.png" alt="plano">
+                <p><span>$</span>6000</p>
+                <button class="agregar">Agregar</button>
+                <button id="rosa" class="infoVino" id="rosa">Información</button>
+            </div>
+
+            <div class="producto" data-price="30000">
+                <h4>Vino espumoso</h4>
+                <img src="Imágenes HTML/Vino espumoso.png" alt="plano">
+                <p><span>$</span>5500</p>
+                <button class="agregar">Agregar</button>
+                <button id="espumoso" class="infoVino" id="espumoso">Información</button>
+            </div>
+        </section>
+
+        <section class="data">
+            <h1><i id="dat">¿Quieres saber más de los vinos?</i></h1>
+            <button id="pregunta">Toca el botón <u>"Información"</u> y obten algún dato interesante.</button>
+        </section>
+
+        <section class="contenedorCarrito">
+            <div class="cart">
+                <h2>Carrito</h2>
+                <ul id="lista"></ul>
+                <div>
+                    <button id="vaciar">Vaciar Carrito</button>
+                    <!--Puede que en vez de class sea id-->
+                </div>
+            </div>
+
+        </section>
+        <div class="total">
+            <b>Total: <span class="totalPrecio"> $0</span>Ars</b>
+            <!--tambien en vez de class puede ser id-->
+            <button id="pago">Pagar</button>
+        </div>
+
+        <section class="comentario" id="coment">
+            <h2>¡Deja tu comentario aquí!</h2>
+            <p>Tenga en cuenta que el comentario se borrará una vez se refresque la página.</p>
+            <label for="comentar">Ingrese el texto:</label>
+            <textarea id="com"></textarea>
+            <button id="submit">Enviar</button>
+            <br>
+
+            <div id="listaComentario"></div>
+        </section>
+
+    </main>
+    <footer id="footer">
+        <img src="Imágenes HTML/Icon.png" height="100" width="100" alt="Vyo">
+        <div class="red">
+            <img id="instagram" src="Imágenes HTML/LogoInstagram.jpg" alt="Instagram" height="50" width="50"></a>
+            <img id="Twitter" src="Imágenes HTML/Twitter logo.webp" alt="Twitter" height="50" width="50"></a>
+            <img id="Facebook" src="Imágenes HTML/facebook logo 2.webp" alt="Facebook" height="50" width="50"></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
